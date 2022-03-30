@@ -16,7 +16,6 @@ body {
   font-weight: bold;
 }
 nav,
-menu,
 section,
 main,
 aside {
@@ -31,9 +30,42 @@ menu {
   background-color: #7048e8;
   color: #fff;
   grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+button {
+  font-weight: bold;
+  display: inline-block;
+
+  font-size: 16px;
+  background-color: #5f3dc4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+}
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
 }
 section {
   background-color: #e9ecef;
+  padding: 40px;
+  /*How element dont fit in container fits*/
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.email {
+  background-color: #adb5bd;
+  height: 96px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 aside {
   background-color: #e9ecef;
